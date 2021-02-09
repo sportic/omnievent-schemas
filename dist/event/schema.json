@@ -1,0 +1,36 @@
+{
+    "id": "https://raw.githubusercontent.com/sportic/omnievent-schemas/main/dist/event/schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Event schema",
+    "required": [
+        "name",
+        "eventStatus"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "eventStatus": {
+            "default": "EventScheduled",
+            "enum": [
+                "EventCancelled",
+                "EventMovedOnline",
+                "EventPostponed",
+                "EventRescheduled",
+                "EventScheduled"
+            ],
+            "type": "string"
+        },
+        "races": {
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/sportic/omnievent-schemas/main/dist/race/schema.json"
+                    }
+                ]
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}

@@ -1,0 +1,11 @@
+{
+  "name" : "World Marathon",
+  "startDate": "",
+  "endDate": "",
+  "eventStatus": "EventScheduled",
+  "races" : [
+    {
+      "name" : "Marathon"
+    }
+  ]
+}
