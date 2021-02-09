@@ -4,11 +4,23 @@
     "title": "Event schema",
     "required": [
         "name",
+        "startDate",
         "eventStatus"
     ],
     "properties": {
         "name": {
             "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "startDate": {
+            "type": "string",
+            "format": "date"
+        },
+        "endDate": {
+            "type": "string",
+            "format": "date"
         },
         "eventStatus": {
             "default": "EventScheduled",
@@ -20,6 +32,10 @@
                 "EventScheduled"
             ],
             "type": "string"
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
         },
         "races": {
             "items": {

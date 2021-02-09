@@ -1,7 +1,7 @@
 # Omnievent content schemas
 
 This repo contains schemas and examples of the content used by endurance events platforms.
-It tries to create a common standard for publishing and importing data betwen platforms.
+It tries to create a common standard for publishing and importing data between platforms.
 
 We use [JSON Schema](http://json-schema.org/) to define the schemas.
 

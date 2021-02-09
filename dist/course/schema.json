@@ -1,0 +1,12 @@
+{
+    "id": "https://raw.githubusercontent.com/sportic/omnievent-schemas/main/dist/course/schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Course schema",
+    "required": [],
+    "properties": {
+        "topology": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

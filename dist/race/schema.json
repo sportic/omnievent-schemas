@@ -8,6 +8,19 @@
     "properties": {
         "name": {
             "type": "string"
+        },
+        "startTime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "participation": {
+            "default": "solo",
+            "enum": [
+                "solo",
+                "team",
+                "relay"
+            ],
+            "type": "string"
         }
     },
     "type": "object"
