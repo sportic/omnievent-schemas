@@ -2,24 +2,9 @@
 
 namespace Sportic\OmniEvent\Models\Races;
 
-use ArrayObject;
-use Spatie\SchemaOrg\Type;
+use Sportic\OmniEvent\Models\Base\TypeCollection;
 
-class RaceCollection extends ArrayObject implements Type
+class RaceCollection extends TypeCollection
 {
 
-    public function toArray(): array
-    {
-        return $this->getArrayCopy();
-    }
-
-    public function toScript(): string
-    {
-        // TODO: Implement toScript() method.
-    }
-
-    public function __toString(): string
-    {
-        // TODO: Implement __toString() method.
-    }
 }

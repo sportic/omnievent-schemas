@@ -22,8 +22,8 @@ class EventTest extends AbstractTest
         $race->name('Race 2');
         $event->addRace($race);
 
-        self::assertSame(
-            file_get_contents(TEST_FIXTURE_PATH . '/samples/events/event_complete.json'),
+        self::assertJsonStringEqualsJsonFile(
+            TEST_FIXTURE_PATH . '/samples/events/event_complete.json',
             json_encode($event)
         );
     }

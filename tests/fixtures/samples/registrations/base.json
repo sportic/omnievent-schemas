@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EventRegistration",
+  "attendee": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Participant",
+      "familyName": "Doe",
+      "givenName": "John"
+    }
+  ],
+  "reservationFor": {
+    "@type": "SportsEvent",
+    "name": "Race 1",
+    "superEvent": {
+      "@type": "Event",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "name": "World Marathon"
+    }
+  }
+}
