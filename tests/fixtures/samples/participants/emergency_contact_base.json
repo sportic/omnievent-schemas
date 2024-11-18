@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EmergencyContact",
+  "description": "Father",
+  "email": "john@gmail.com",
+  "familyName": "Doe",
+  "givenName": "John",
+  "telephone": "123456789"
+}

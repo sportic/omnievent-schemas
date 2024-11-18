@@ -5,6 +5,14 @@
     {
       "@context": "https://schema.org",
       "@type": "Participant",
+      "emergencyContact": {
+        "@type": "EmergencyContact",
+        "description": "Mother",
+        "email": "jane@gmail.com",
+        "familyName": "Doe",
+        "givenName": "Jane",
+        "telephone": "987654321"
+      },
       "familyName": "Doe",
       "givenName": "John"
     }
