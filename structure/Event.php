@@ -2,7 +2,7 @@
 
 namespace Sportic\OmniEvent\Structure;
 
-use Sportic\OmniEvent\Models\EventStatus;
+use Sportic\OmniEvent\Models\Events\EventStatus;
 use Swaggest\JsonSchema\Constraint\Format;
 use Swaggest\JsonSchema\Constraint\Properties;
 use Swaggest\JsonSchema\Constraint\Type;
@@ -71,7 +71,7 @@ class Event extends AbstractStructure
         $properties->endDate->format = Format::DATE;
 
         $properties->eventStatus = Schema::string();
-        $properties->eventStatus->setDefault(EventStatus::SCHEDULED);
+        $properties->eventStatus->setDefault(EventStatus::EventScheduled);
         $properties->eventStatus->setEnum(EventStatus::$values);
 
         $properties->url = Schema::string();

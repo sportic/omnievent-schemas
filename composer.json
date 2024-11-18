@@ -1,5 +1,5 @@
 {
-  "name": "sportic/omnievent-schemas",
+  "name": "sportic/omnievent-worldsmarathons",
   "license": "",
   "description": "",
   "authors": [
@@ -15,11 +15,21 @@
     }
   },
   "autoload-dev": {
+    "psr-4": {
+      "Sportic\\OmniEvent\\Tests\\": "tests/src"
+    }
   },
   "require": {
+    "spatie/schema-org": "^3.23"
   },
   "require-dev": {
+    "ext-json": "*",
     "swaggest/json-schema-maker": "^0.3.5",
-    "phpunit/phpunit": "^8.0 || ^9.4"
+    "bytic/phpqatools": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
