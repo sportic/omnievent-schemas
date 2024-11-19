@@ -3,6 +3,7 @@
 namespace Sportic\OmniEvent\Models\Events;
 
 use Spatie\SchemaOrg\SportsEvent;
+use Sportic\OmniEvent\Models\Base\Behaviours\HasName;
 use Sportic\OmniEvent\Models\Races\Race;
 use Sportic\OmniEvent\Models\Races\RaceCollection;
 
@@ -12,6 +13,7 @@ use Sportic\OmniEvent\Models\Races\RaceCollection;
  */
 class Event extends SportsEvent
 {
+    use HasName;
 
     public function eventStatusScheduled()
     {

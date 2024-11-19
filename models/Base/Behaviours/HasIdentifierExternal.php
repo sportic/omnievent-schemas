@@ -9,7 +9,7 @@ trait HasIdentifierExternal
         return $this->getProperty('identifierExternal');
     }
 
-    public function identifierExternal(string $identifierExternal): static
+    public function identifierExternal(?string $identifierExternal): static
     {
         $this->setProperty('identifierExternal', $identifierExternal);
         return $this;

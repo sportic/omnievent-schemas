@@ -2,10 +2,11 @@
 
 namespace Sportic\OmniEvent\Models\Base;
 
+use ArrayIterator;
 use ArrayObject;
 use Spatie\SchemaOrg\Type;
 
-abstract class TypeCollection  extends ArrayObject implements Type
+abstract class TypeCollection  extends ArrayIterator implements Type
 {
 
     public function toArray(): array
