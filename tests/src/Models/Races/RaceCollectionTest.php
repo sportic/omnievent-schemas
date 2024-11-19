@@ -1,10 +1,10 @@
 <?php
 
-namespace Sportic\OmniEvent\Tests\Races;
+namespace Sportic\OmniEvent\Tests\Models\Races;
 
+use PHPUnit\Framework\TestCase;
 use Sportic\OmniEvent\Models\Races\Race;
 use Sportic\OmniEvent\Models\Races\RaceCollection;
-use PHPUnit\Framework\TestCase;
 
 class RaceCollectionTest extends TestCase
 {
