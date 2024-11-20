@@ -15,11 +15,15 @@ trait HasRegistrationAnswersList
         return $this;
     }
 
-    public function registrationAnswers(array $answers): static
+    public function registrationAnswers(array|RegistrationAnswersList $answers): static
     {
-        $answersList = new RegistrationAnswersList();
-        foreach ($answers as $answer) {
-            $answersList->append($answer);
+        if (is_array($answers)) {
+            $answersList = new RegistrationAnswersList();
+            foreach ($answers as $answer) {
+                $answersList->append($answer);
+            }
+        } else {
+            $answersList = $answers;
         }
         $this->setProperty('registrationAnswers', $answersList);
         return $this;
