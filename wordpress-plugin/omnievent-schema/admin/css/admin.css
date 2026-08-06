@@ -1,0 +1,42 @@
+/* OmniEvent Schema – admin styles */
+
+.omnievent-meta-table th {
+    padding: 8px 10px 8px 0;
+    font-weight: 600;
+    width: 180px;
+    vertical-align: top;
+}
+
+.omnievent-meta-table td {
+    padding: 6px 0;
+    vertical-align: top;
+}
+
+.omnievent-meta-table input[type="text"],
+.omnievent-meta-table input[type="url"],
+.omnievent-meta-table input[type="datetime-local"],
+.omnievent-meta-table select,
+.omnievent-meta-table textarea {
+    width: 100%;
+    max-width: 500px;
+}
+
+.omnievent-race-checklist,
+.omnievent-schema-checklist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.omnievent-race-checklist li,
+.omnievent-schema-checklist li {
+    margin-bottom: 4px;
+}
+
+.omnievent-race-checklist label,
+.omnievent-schema-checklist label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
