@@ -1,0 +1,25 @@
+title: Omnievent Schemas
+description: >-
+  An open standard for publishing and exchanging data between endurance sports platforms —
+  built on JSON Schema and inspired by Schema.org.
+baseurl: "/omnievent-schemas"
+url: "https://sportic.github.io"
+
+theme: minima
+
+header_pages:
+  - index.md
+  - research.md
+  - schemas.md
+  - inspiration.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
