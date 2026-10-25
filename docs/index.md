@@ -29,13 +29,13 @@ This means:
 
 Omnievent Schemas defines a **common JSON Schema vocabulary** for the core data objects of endurance events:
 
-| Schema | Covers |
-|--------|--------|
-| **Event** | Name, dates, status, URL, races |
+| Current published schema | Covers |
+|--------------------------|--------|
+| **Event** | Name, description, date-only start/end, status, URL, races |
 | **Race** | Name, start time, participation type (solo / team / relay) |
-| **Course** | Topology, distance, elevation |
-| **Participant** | Personal info, emergency contacts, club, gender |
-| **Registration** | Orders, answers to custom questions |
+| **Course** | Topology |
+
+PHP Schema.org models also cover registration-related types, but participant, registration, order and question models do not currently have corresponding published JSON Schemas.
 
 Built on [JSON Schema Draft-07](https://json-schema.org/draft-07/json-schema-release-notes.html) and inspired by [Schema.org/Event](https://schema.org/Event), the vocabulary is intentionally **minimal, extensible, and language-agnostic**.
 
@@ -74,6 +74,17 @@ Your registration data, emergency contacts, and race history travel with you —
 ```
 
 Validate it instantly against the [Event schema](https://raw.githubusercontent.com/sportic/omnievent-schemas/main/dist/event/schema.json).
+
+## Phase 1 architecture proposal
+
+The registration and endurance-sport expansion is in the research and approval phase. The documents below are proposals, not implemented schemas or adapter guarantees:
+
+- [Canonical architecture and example payloads](architecture.md)
+- [Platform field crosswalk](crosswalk.md)
+- [Platform capabilities and API boundaries](platform-capabilities.md)
+- [Platform model evidence](research/platform-models.md)
+- [Research gaps](research/gaps.md)
+- [Architecture decision records](decisions/)
 
 ---
 
