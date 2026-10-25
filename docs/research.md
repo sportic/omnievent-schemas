@@ -7,6 +7,8 @@ permalink: /research/
 
 # Research & Decisions
 
+> **Status note (2026-10-25):** This page records earlier project research and historical design statements; it is not approval of the Phase 1 expansion or verification of every earlier claim. The current, evidence-qualified proposal is in [the architecture document](architecture.md), with platform-specific evidence in [the research report](research/platform-models.md), [crosswalk](crosswalk.md), and [open gaps](research/gaps.md). No implementation changes are authorized by those proposals.
+
 This page documents the research that shaped Omnievent Schemas, the design decisions made, and the trade-offs considered along the way. Transparency here is intentional — we want collaborators to understand *why* things are the way they are, and to challenge us when they disagree.
 
 ---
